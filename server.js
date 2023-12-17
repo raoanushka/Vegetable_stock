@@ -1,11 +1,12 @@
 const express=require('express');
 const mysql = require('mysql');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app=express();
 
 app.use(bodyParser.urlencoded({extended:false}));
-
+app.use(cors());
 app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
