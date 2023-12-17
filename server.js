@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
-    host:'125.564.12.1',
+    host:'localhost',
     database:'mart_stock',
     user:'root',
     password:''
